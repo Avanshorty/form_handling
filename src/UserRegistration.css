@@ -1,0 +1,152 @@
+.registration-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f1f3f6;
+}
+
+.registration-card,
+.result-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.registration-card h1,
+.result-card h2 {
+  margin: 0;
+  padding: 18px 24px;
+  color: #333;
+  font-size: 22px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.form-content {
+  padding: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.form-row label,
+.field-label {
+  color: #444;
+  font-weight: 500;
+}
+
+.form-row input[type="text"],
+.form-row select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-row input[type="text"]:focus,
+.form-row select:focus {
+  border-color: #3759cf;
+  box-shadow: 0 0 0 2px rgba(55, 89, 207, 0.15);
+}
+
+.form-row select:disabled {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid #d5d5d5;
+}
+
+.button-area button {
+  padding: 9px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reset-button {
+  color: #444;
+  background-color: #eeeeee;
+  border: 1px solid #999999;
+}
+
+.submit-button {
+  color: white;
+  background-color: #244bd6;
+  border: 1px solid #244bd6;
+}
+
+.reset-button:hover {
+  background-color: #dddddd;
+}
+
+.submit-button:hover {
+  background-color: #1737ad;
+}
+
+.result-card {
+  margin-top: 25px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 14px;
+  padding: 25px;
+}
+
+.result-grid strong {
+  color: #333;
+}
+
+.result-grid span {
+  color: #555;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .registration-page {
+    padding: 20px 10px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .result-grid span {
+    margin-bottom: 8px;
+  }
+}
